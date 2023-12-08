@@ -76,7 +76,7 @@ ul {
 .info-container {
   font-size: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .target,
@@ -318,12 +318,12 @@ td:first-child {
   vertical-align: top;
 }
 
-tr {
-  border-top: none;
-}
-
 tr:first-child {
   height: 113px;
+}
+
+tr {
+  border-top: none;
 }
 
 /* 9 FOOTERS */
