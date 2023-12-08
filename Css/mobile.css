@@ -1,4 +1,12 @@
 @media (max-width: 576px) {
+  .info-container,
+  .job-cards,
+  .certificate-box,
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* Header */
   .banner {
     height: 75vh;
@@ -7,6 +15,7 @@
   .nav-bar {
     width: 100vw;
   }
+
   .nav-anchor:link,
   .nav-anchor:visited {
     display: block;
@@ -14,36 +23,7 @@
     border: none;
   }
 
-  /* Footer */
-
-  .footer {
-    gap: 4px;
-  }
-
-  .footer-icon {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* PERSIONAL INFORMATION */
-  .info-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* JOB INFORMATION */
-
-  .job-cards {
-    grid-template-columns: 1fr;
-  }
-
   /* CERTIFICATION */
-
-  .certificate-box {
-    display: flex;
-    flex-direction: column;
-  }
 
   .box:nth-child(2) {
     border-left: none;
@@ -69,12 +49,24 @@
   }
 
   /* PROJECTS */
+
   .project-cards {
-    grid-template-columns: 1fr;
+    font-size: 1.2rem;
   }
 
   tr:first-child,
   tr:nth-child(2) {
     height: auto;
   }
+
+  /* Footer */
+
+  .footer {
+    gap: 4px;
+  }
+
+  .footer-icon {
+    font-size: 26px;
+  }
 }
+
